@@ -1,5 +1,7 @@
 <?php
 
+use App\Models\Plan;
+use App\Models\Task;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -14,5 +16,6 @@ use Illuminate\Support\Facades\Route;
 */
 
 Route::get('/', function () {
-    return view('welcome');
+    $data = Task::find(2)->members;
+    return $data;
 });
