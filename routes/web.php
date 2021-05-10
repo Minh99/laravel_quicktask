@@ -1,21 +1,7 @@
 <?php
 
-use App\Models\Plan;
-use App\Models\Task;
+use App\Http\Controllers\Controller;
 use Illuminate\Support\Facades\Route;
 
-/*
-|--------------------------------------------------------------------------
-| Web Routes
-|--------------------------------------------------------------------------
-|
-| Here is where you can register web routes for your application. These
-| routes are loaded by the RouteServiceProvider within a group which
-| contains the "web" middleware group. Now create something great!
-|
-*/
 
-Route::get('/', function () {
-    $data = Task::find(2)->members;
-    return $data;
-});
+Route::get('/',[Controller::class,'index'])->name('home');

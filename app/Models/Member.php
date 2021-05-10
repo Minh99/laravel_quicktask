@@ -11,7 +11,7 @@ class Member extends Model
     
     public function tasks()
     {
-        return $this->belongsToMany('App\Models\Task','plans')->withTimestamps();;
+        return $this->belongsToMany(Task::class,'plans')->withTimestamps();;
     }
 
 }

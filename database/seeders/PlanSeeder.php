@@ -15,10 +15,14 @@ class PlanSeeder extends Seeder
     public function run()
     {
         $data = array(
-            ['task_id'=> 1,'member_id'=> 1,],
-            ['task_id'=> 1,'member_id'=> 3,],
-            ['task_id'=> 2,'member_id'=> 2,],
-            ['task_id'=> 2,'member_id'=> 4,]
+            ['task_id'=> 1,'member_id'=> 1],
+            ['task_id'=> 1,'member_id'=> 3],
+            ['task_id'=> 2,'member_id'=> 2],
+            ['task_id'=> 2,'member_id'=> 4],
+            ['task_id'=> 3,'member_id'=> 1],
+            ['task_id'=> 4,'member_id'=> 4],
+            ['task_id'=> 4,'member_id'=> 2],
+            ['task_id'=> 4,'member_id'=> 5],
         );
 
         DB::table('plans')->insert($data);

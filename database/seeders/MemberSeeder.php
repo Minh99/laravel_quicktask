@@ -15,19 +15,12 @@ class MemberSeeder extends Seeder
     public function run()
     {
         $data = array(
-            [
-                'name'=>'Member A',
-                
-            ],
-            [
-                'name'=>'Member B',
-            ],
-            [
-                'name'=>'Member C',
-            ],
-            [
-                'name'=>'Member D',
-            ]
+            ['name'=>'Member A'],
+            ['name'=>'Member B'],
+            ['name'=>'Member C'],
+            ['name'=>'Member D'],
+            ['name'=>'Member E'],
+            ['name'=>'Member F'],
         );
         DB::table('members')->insert($data);
     }

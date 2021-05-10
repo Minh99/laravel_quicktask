@@ -4,6 +4,7 @@ namespace App\Models;
 
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
+use Illuminate\Http\Client\Request;
 
 class Task extends Model
 {
@@ -11,7 +12,7 @@ class Task extends Model
 
     public function members()
     {
-        return $this->belongsToMany('App\Models\Member','plans')->withTimestamps();;
+        return $this->belongsToMany(Member::class,'plans')->withTimestamps();;
     }
 
 }

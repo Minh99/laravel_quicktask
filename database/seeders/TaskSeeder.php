@@ -15,12 +15,10 @@ class TaskSeeder extends Seeder
     public function run()
     {
         $data = array(
-            [
-                'name'=>'Task One',
-            ],
-            [
-                'name'=>'Task Two',
-            ]
+            ['name'=>'Task One'],
+            ['name'=>'Task Two'],
+            ['name'=>'Task Three'],
+            ['name'=>'Task Four']
         );
         DB::table('tasks')->insert($data);
     }
