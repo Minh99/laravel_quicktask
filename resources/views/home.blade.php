@@ -4,17 +4,19 @@
   <div class="collapse navbar-collapse" id="navbarSupportedContent">
     <ul class="navbar-nav mr-auto">
       <li class="nav-item">
-        <a class="nav-link" href="{{route('show','plan')}}">Plans</a>
+        <a class="nav-link" href="{{route('show','plan')}}">@lang('Plans')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('show','task')}}">Tasks</a>
+        <a class="nav-link" href="{{route('show','task')}}">@lang('Tasks')</a>
       </li>
       <li class="nav-item">
-        <a class="nav-link" href="{{route('show','member')}}">Members</a>
+        <a class="nav-link" href="{{route('show','member')}}">@lang('Members')</a>
       </li>
     </ul>
   </div>
 </nav>
+<a href="{{ route('i18n','vi') }}">VI</a>
+<a href="{{ route('i18n','en') }}">EN</a>
 <div class="container">
     <div class="row">
         @yield('content_Plan')
